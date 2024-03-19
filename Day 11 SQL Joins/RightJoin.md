@@ -95,3 +95,11 @@ Now, let's explore how the SQL RIGHT JOIN can be used to retrieve data from both
    In this query, we use RIGHT JOIN to combine order and customer data, and then we use the GROUP BY clause with the SUM function to calculate the total amount spent on orders, including those without associated customers.
 
 SQL RIGHT JOIN is a valuable tool for retrieving data from the secondary table while including related data from the primary table, ensuring that all rows from the secondary table are included in the result, even if some have no matches in the primary table.
+
+```sql
+create table a
+(
+    id int,
+    name varchar(20)
+);
+``
