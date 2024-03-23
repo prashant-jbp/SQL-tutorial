@@ -116,19 +116,34 @@ SELECT COUNT(CustomerID), Country
 FROM Customers
 GROUP BY Country;
 
-```
+``` 
+## **OutPut**  number of Country of each CustomerID
 
-|   |   |
-| ------------ | ------------ |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
+| **COUNT(CustomerID)** | **Country**     |
+|:-----------------:|:-----------:|
+| 3                 | Argentina   |
+| 2                 | Austria     |
+| 2                 | Belgium     |
+| 9                 | Brazil      |
+| 3                 | Canada      |
+| 2                 | Denmark     |
+| 2                 | Finland     |
+| 11                | France      |
+| 11                | Germany     |
+| 1                 | Ireland     |
+| 3                 | Italy       |
+| 5                 | Mexico      |
+| 1                 | Norway      |
+| 1                 | Poland      |
+| 2                 | Portugal    |
+| 5                 | Spain       |
+| 2                 | Sweden      |
+| 2                 | Switzerland |
+| 7                 | UK          |
+| 13                | USA         |
+| 4                 | Venezuela   |
+
+
 
 
 
@@ -140,7 +155,37 @@ FROM Customers
 GROUP BY Country
 ORDER BY COUNT(CustomerID) DESC;
 ```
-### result arrange CustomerID wise  ascending order
+
+## **OutPut**  number of Country of each CustomerID descending order
+
+| COUNT(CustomerID) | Country     |
+|:-----------------:|:-----------:|
+| 13                | USA         |
+| 11                | Germany     |
+| 11                | France      |
+| 9                 | Brazil      |
+| 7                 | UK          |
+| 5                 | Mexico      |
+| 5                 | Spain       |
+| 4                 | Venezuela   |
+| 3                 | Argentina   |
+| 3                 | Italy       |
+| 3                 | Canada      |
+| 2                 | Sweden      |
+| 2                 | Finland     |
+| 2                 | Switzerland |
+| 2                 | Austria     |
+| 2                 | Portugal    |
+| 2                 | Belgium     |
+| 2                 | Denmark     |
+| 1                 | Ireland     |
+| 1                 | Norway      |
+| 1                 | Poland      |
+
+## **OutPut**  number of Country of each CustomerID descending order
+
+_____
+
 ```sql
 SELECT COUNT(CustomerID), Country
 FROM Customers
@@ -153,6 +198,32 @@ SELECT COUNT(CustomerID), Country
 FROM Customers
 GROUP BY Country
 ORDER BY COUNT(Country) asc;
+
+
+| COUNT(CustomerID) | Country     |
+|:-----------------:|:-----------:|
+| 1                 | Ireland     |
+| 1                 | Norway      |
+| 1                 | Poland      |
+| 2                 | Sweden      |
+| 2                 | Finland     |
+| 2                 | Switzerland |
+| 2                 | Austria     |
+| 2                 | Portugal    |
+| 2                 | Belgium     |
+| 2                 | Denmark     |
+| 3                 | Argentina   |
+| 3                 | Italy       |
+| 3                 | Canada      |
+| 4                 | Venezuela   |
+| 5                 | Mexico      |
+| 5                 | Spain       |
+| 7                 | UK          |
+| 9                 | Brazil      |
+| 11                | Germany     |
+| 11                | France      |
+| 13                | USA         |
+
 
 ### The MySQL HAVING Clause
 - The HAVING clause was added to SQL because the WHERE keyword cannot be used with aggregate functions like sum(), count(), etc.
