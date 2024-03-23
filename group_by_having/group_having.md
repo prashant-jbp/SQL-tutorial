@@ -8,7 +8,7 @@ CREATE TABLE Customers
     City varchar(25),
     PostalCode int,
     Country varchar(25)
-    );
+);
 ```
 -----
 #  Table data for insert
